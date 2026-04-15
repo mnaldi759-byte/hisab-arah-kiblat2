@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>ILMU FALAK UIN ALAUDDIN MAKASSAR</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<canvas id="stars"></canvas>
+
+<div class="app">
+
+    <h1>🌙 Ilmu Falak</h1>
+    <p class="subtitle">Prediksi Visibilitas Hilal Modern</p>
+
+    <div class="glass">
+        <div class="input-group">
+            <input type="number" id="lat" placeholder="Lintang (-5.14)">
+            <input type="number" id="lng" placeholder="Bujur (119.41)">
+            <input type="date" id="tanggal">
+        </div>
+
+        <button onclick="hitung()">🔭 Hitung Hilal</button>
+        <button class="loc-btn" onclick="ambilLokasi()">📍 Gunakan Lokasi Saya</button>
+    </div>
+
+    <div id="hasil" class="glass hasil"></div>
+
+    <div class="glass">
+        <canvas id="chart"></canvas>
+    </div>
+
+    <div class="footer">
+        ✨ Sistem Hilal Astronomi • UIN Alauddin Makassar
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
